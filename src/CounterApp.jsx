@@ -17,7 +17,7 @@ Tarea
 
 6. Asegúrense de no tener errores ni warnings (Cualquier warning no usado, comentar el código)
 */
-import { useState } from 'react'; //Importando nuestro primer hook
+import { useState } from 'react'; //Importando nuestro primer hook y desestructurándolo para no tener que usar React.useState
 import PropTypes from 'prop-types';
 
 const handleAddTest = (event, name) => { // Al declarar la función fuera del componente, no se asignará un espacio en memoria cada vez que se renderice el elemento
@@ -29,7 +29,7 @@ const handleAddTest = (event, name) => { // Al declarar la función fuera del co
 
 const CounterApp = ( {value} ) => {
 
-    console.log('render'); //Cada vez que hay un cambio en el estado, se dispara el functional component, es decir, se renderiza todo el componente nuevamente
+    //console.log('render'); //Cada vez que hay un cambio en el estado, se dispara el functional component, es decir, se renderiza todo el componente nuevamente
 
     const [ counter, setCounter ] = useState( value );
     
@@ -50,13 +50,13 @@ const CounterApp = ( {value} ) => {
         <>
             <h1>CounterApp</h1>
             <h2> { counter } </h2>  
-            <button onClick={ (event) => handleAddTest(event, 'Fer', counter) }>
+            {/* <button onClick={ (event) => handleAddTest(event, 'Fer', counter) }>
                 Test Evento click
-            </button>
+            </button> */}
 
             <button onClick={ handleAdd }> +1 </button>         
             <button onClick={ handleSubstract }> -1 </button>         
-            <button onClick={ handleReset }> Reset </button>         
+            <button aria-label='btn-reset' onClick={ handleReset }> Reset </button>         
         </>
     );
 }

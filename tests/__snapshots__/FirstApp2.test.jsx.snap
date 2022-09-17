@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en <FirstApp></FirstApp> debe hacer macth con el snapshot 1`] = `
+<div>
+  <h1>
+    No hay title
+  </h1>
+  <code>
+    {"msg":"Hola","name":"fer"}
+  </code>
+  <h2>
+    Hola, soy un subtituloo
+  </h2>
+</div>
+`;

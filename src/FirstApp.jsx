@@ -15,7 +15,7 @@ const FirstApp = ({title, subTitle='sasdasd'}) => {
         <>
             <h1>{title}</h1>
             <code>{ JSON.stringify(newMsg) }</code>
-            <p>{subTitle}</p>
+            <h2>{subTitle}</h2>
         </>
     )
 }
@@ -33,6 +33,6 @@ FirstApp.propTypes = {
 //Tomamos nuestro functional component FirstApp y le asignamos valores por defecto a sus proptypes
 FirstApp.defaultProps = {
     title: 'No hay title',
-    subTitle: 'No hay subtitle',
+    //subTitle: 'No hay subtitle',
     name: 'Fernando Gutz' //También podemos añadir nuevos proptypes
 };

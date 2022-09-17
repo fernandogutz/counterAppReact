@@ -7,7 +7,8 @@ import './styles.css'; // Cargando los estilos globales en el main.jsx
 
 ReactDOM.createRoot( document.getElementById('root')).render(
     <React.StrictMode>
-        <CounterApp value={999}/>
+        <CounterApp value={100}/>
+        {/* <FirstApp subTitle='Subtitulpppp'></FirstApp> */}
     </React.StrictMode>
 );
     
